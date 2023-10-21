@@ -13,7 +13,7 @@ const displayTemples = (temples) => {
         h3.textContent = temple.templeName
 
         const img = document.createElement('img')
-        img.src = temple.imageURL
+        img.setAttribute('src', temple.imageUrl)
         img.alt= temple.location
 
         article.appendChild(h3)
